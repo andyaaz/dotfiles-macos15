@@ -1,0 +1,12 @@
+# Setting PATH for Python 3.5
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+
+export PATH=/usr/local/mysql/bin:/usr/local/php5-7.1.1-20170213-100732/bin:/usr/local/bin:~/.composer/vendor/bin:$PATH
+source ~/.profile
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
