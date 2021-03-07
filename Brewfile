@@ -104,36 +104,97 @@ brew "heroku/brew/heroku"
 brew "mongodb/brew/mongodb-community"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Application launcher and productivity software
+cask "alfred"
 # Memory training application
 cask "anki"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Web browser focusing on privacy
+cask "brave-browser"
+# Tool to list all active shortcuts of the current application
+cask "cheatsheet"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
+# Server and cloud storage browser
+cask "cyberduck"
+# API documentation browser and code snippet manager
+cask "dash"
+# Voice and text chat software
+cask "discord"
 # Data recovery software
 cask "disk-drill"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Easiest way to get started with Electron
+cask "electron-fiddle"
 # Web browser
 cask "firefox"
+# Web browser
+cask "firefox-developer-edition"
 cask "font-fira-code"
+# Tool to measure the computer system's performance
+cask "geekbench"
+# Web browser
+cask "google-chrome"
 # Light, Electron-based Wrapper around GraphiQL
 cask "graphiql"
 cask "graphql-playground"
+# Open-source video transcoder
+cask "handbrake"
+# Tool to optimize images to a smaller size
+cask "imageoptim"
+# HTTP and GraphQL Client
+cask "insomnia"
+# File archiver
+cask "keka"
 # Open-source keystroke visualizer
 cask "keycastr"
 # GPU-based terminal emulator
 cask "kitty"
+# Controls and monitors all fans on Apple computers
+cask "macs-fan-control"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+cask "mongodb-compass"
+# Visual tool to design, develop and administer MySQL servers
+cask "mysqlworkbench"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# Image editor
+cask "paintbrush"
+cask "pgadmin4"
 # Timer application
 cask "pomotroid"
+# Collaboration platform for API development
+cask "postman"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Wireless screen-mirroring application
+cask "reflector"
+cask "screaming-frog-seo-spider"
 # Team communication and collaboration software
 cask "slack"
+# Remote access and connectivity software focused on security
+cask "teamviewer"
+# Web browser focusing on security
+cask "tor-browser"
 # Open-source code editor
 cask "visual-studio-code"
 # Integrated development environment
 cask "visual-studio-code-insiders"
+# Multimedia player
+cask "vlc"
 # Remote desktop application focusing on security
 cask "vnc-viewer"
+# Music player for high resoluion (Hi-Res) music through the external sources
+cask "vox"
 # Network protocol analyzer
 cask "wireshark"
+# Multi-platform graphical interface for official Nmap Security Scanner
+cask "zenmap"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "Cinebench", id: 1438772273
 mas "Disk Speed Test", id: 425264550
 mas "EuDic", id: 434350458
@@ -147,4 +208,5 @@ mas "Microsoft Remote Desktop", id: 1295203466
 mas "ScreenBrush", id: 1233965871
 mas "Smart Countdown Timer", id: 1410709951
 mas "The Unarchiver", id: 425424353
+mas "Trello", id: 1278508951
 mas "WeChat", id: 836500024
