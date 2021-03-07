@@ -146,6 +146,8 @@ cask "handbrake"
 cask "imageoptim"
 # HTTP and GraphQL Client
 cask "insomnia"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # File archiver
 cask "keka"
 # Open-source keystroke visualizer
@@ -170,9 +172,9 @@ cask "pomotroid"
 cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Wireless screen-mirroring application
-cask "reflector"
 cask "screaming-frog-seo-spider"
+# Tool to format memory cards complying with the SD File System spec
+cask "sdformatter"
 # Team communication and collaboration software
 cask "slack"
 # Remote access and connectivity software focused on security
