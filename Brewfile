@@ -6,6 +6,7 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
@@ -43,6 +44,8 @@ brew "libass"
 brew "ffmpeg"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
+# Highest-quality GIF encoder based on pngquant
+brew "gifski"
 # Distributed revision control system
 brew "git"
 # Library to render SVG files using Cairo
@@ -60,13 +63,13 @@ brew "jmeter"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # GUI for vim, made for macOS
-brew "macvim"
+brew "macvim", link: false
 # Mac App Store command-line interface
 brew "mas"
 # Intercept, modify, replay, save HTTP/S traffic
 brew "mitmproxy"
 # Platform built on V8 to build network applications
-brew "node", link: false
+brew "node"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Python dependency management tool
@@ -88,17 +91,27 @@ brew "tmuxinator"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
-brew "vim", link: false
+brew "vim"
 # General-purpose lossless data-compression library
 brew "zlib"
 # faster, friendlier Docker on OS X
 brew "codekitchen/dinghy/dinghy"
+# Terraform
+brew "hashicorp/tap/terraform"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # High-performance, schema-free, document-oriented database
 brew "mongodb/brew/mongodb-community"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Memory training application
+cask "anki"
+# Tool to show live information about the batteries in various devices
+cask "coconutbattery"
+# Data recovery software
+cask "disk-drill"
+# Web browser
+cask "firefox"
 cask "font-fira-code"
 # Light, Electron-based Wrapper around GraphiQL
 cask "graphiql"
@@ -111,6 +124,16 @@ cask "kitty"
 cask "mactex"
 # Timer application
 cask "pomotroid"
+# Team communication and collaboration software
+cask "slack"
+# Open-source code editor
+cask "visual-studio-code"
+# Integrated development environment
+cask "visual-studio-code-insiders"
+# Remote desktop application focusing on security
+cask "vnc-viewer"
+# Network protocol analyzer
+cask "wireshark"
 mas "Cinebench", id: 1438772273
 mas "Disk Speed Test", id: 425264550
 mas "EuDic", id: 434350458
@@ -122,7 +145,6 @@ mas "Kindle", id: 405399194
 mas "LanScan", id: 472226235
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "ScreenBrush", id: 1233965871
-mas "Slack", id: 803453959
 mas "Smart Countdown Timer", id: 1410709951
 mas "The Unarchiver", id: 425424353
 mas "WeChat", id: 836500024
