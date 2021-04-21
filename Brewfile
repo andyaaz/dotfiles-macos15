@@ -1,3 +1,4 @@
+tap "aws/tap"
 tap "cartr/qt4"
 tap "codekitchen/dinghy"
 tap "d12frosted/emacs-plus"
@@ -66,6 +67,8 @@ brew "ruby"
 brew "macvim", link: false
 # Mac App Store command-line interface
 brew "mas"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Intercept, modify, replay, save HTTP/S traffic
 brew "mitmproxy"
 # Platform built on V8 to build network applications
@@ -94,6 +97,8 @@ brew "tree"
 brew "vim"
 # General-purpose lossless data-compression library
 brew "zlib"
+# AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
+brew "aws/tap/aws-sam-cli"
 # faster, friendlier Docker on OS X
 brew "codekitchen/dinghy/dinghy"
 # Terraform
@@ -158,6 +163,7 @@ cask "kitty"
 cask "macs-fan-control"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+# Explore and manipulate your MongoDB data
 cask "mongodb-compass"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
@@ -183,7 +189,7 @@ cask "teamviewer"
 cask "tor-browser"
 # Open-source code editor
 cask "visual-studio-code"
-# Integrated development environment
+# Code editor
 cask "visual-studio-code-insiders"
 # Multimedia player
 cask "vlc"
@@ -204,11 +210,15 @@ mas "Gifski", id: 1351639930
 mas "iMovie", id: 408981434
 mas "iMuscle 2", id: 580090604
 mas "iZip Unarchiver", id: 717545828
+mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "LanScan", id: 472226235
 mas "Microsoft Remote Desktop", id: 1295203466
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "ScreenBrush", id: 1233965871
 mas "Smart Countdown Timer", id: 1410709951
 mas "The Unarchiver", id: 425424353
 mas "Trello", id: 1278508951
+mas "VOX", id: 461369673
 mas "WeChat", id: 836500024
