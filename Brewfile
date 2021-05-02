@@ -171,6 +171,7 @@ cask "mysqlworkbench"
 cask "obs"
 # Image editor
 cask "paintbrush"
+# Administration and development platform for PostgreSQL
 cask "pgadmin4"
 # Timer application
 cask "pomotroid"
