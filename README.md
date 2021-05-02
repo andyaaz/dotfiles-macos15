@@ -16,4 +16,10 @@ vscode config will not be stored here (instead setting sync is used)
 - copy them to home dir (will end up with two diff versions)
 - put files with creds in here
 
+## Other settings
+
+- map <control> to <caps lock>
+- map <alt> + <space> to alfred/spotlight search
+- map <shift> + <space> to dictionary
+
 
