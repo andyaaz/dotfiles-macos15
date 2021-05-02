@@ -89,6 +89,7 @@ plugins=(
     zsh-syntax-highlighting
     vi-mode
     patch
+    aws
 )
 
 source $ZSH/oh-my-zsh.sh
