@@ -1,0 +1,5 @@
+[user]
+	name = andyan
+	email = andy.an@coherent.global
+[url "git@github.com:"]
+	insteadOf = https://github.com/
