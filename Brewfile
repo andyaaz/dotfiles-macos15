@@ -2,6 +2,7 @@ tap "aws/tap"
 tap "cartr/qt4"
 tap "codekitchen/dinghy"
 tap "d12frosted/emacs-plus"
+tap "fluxcd/tap"
 tap "hashicorp/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
@@ -11,10 +12,11 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
+tap "weaveworks/tap"
+# Run your GitHub Actions locally 🚀
+brew "act"
 # Command-line interface for SQLite
 brew "sqlite"
-# Tool Command Language
-brew "tcl-tk"
 # Record and share terminal sessions
 brew "asciinema"
 # Library for manipulating PNG images
@@ -23,6 +25,8 @@ brew "libpng"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Enables you to reproduce the CircleCI environment locally
+brew "circleci"
 # Statistics utility to count lines of code
 brew "cloc"
 # Cross-platform make
@@ -37,6 +41,8 @@ brew "docker-machine"
 brew "exercism"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Subtitle renderer for the ASS/SSA subtitle format
@@ -49,10 +55,14 @@ brew "gdk-pixbuf"
 brew "gifski"
 # Distributed revision control system
 brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Kubernetes package manager
+brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
 # Website copier/offline browser
@@ -61,6 +71,8 @@ brew "httrack"
 brew "hub"
 # Load testing and performance measurement application
 brew "jmeter"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # GUI for vim, made for macOS
@@ -73,6 +85,8 @@ brew "minikube"
 brew "mitmproxy"
 # Platform built on V8 to build network applications
 brew "node"
+# Manage multiple Node.js versions
+brew "nvm"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Python dependency management tool
@@ -81,6 +95,8 @@ brew "pipenv"
 brew "postgresql"
 # Python version management
 brew "pyenv"
+# Tool Command Language
+brew "tcl-tk"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
 # Persistent key-value database, with built-in net interface
@@ -94,23 +110,31 @@ brew "tmuxinator"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
-brew "vim"
+brew "vim", link: false
 # General-purpose lossless data-compression library
 brew "zlib"
+# UNIX shell (command interpreter)
+brew "zsh"
 # AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications
 brew "aws/tap/aws-sam-cli"
 # faster, friendlier Docker on OS X
 brew "codekitchen/dinghy/dinghy"
+# Flux CLI
+brew "fluxcd/tap/flux"
 # Terraform
 brew "hashicorp/tap/terraform"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # High-performance, schema-free, document-oriented database
 brew "mongodb/brew/mongodb-community"
+# The official CLI for Amazon EKS
+brew "weaveworks/tap/eksctl"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
+# Utility to set up alt-tab to switch between windows
+cask "alt-tab"
 # Memory training application
 cask "anki"
 # Tool to flash OS images to SD cards & USB drives
@@ -131,7 +155,9 @@ cask "discord"
 cask "disk-drill"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Easiest way to get started with Electron
+# Developer platform
+cask "dotnet-sdk"
+# Create and play with small Electron experiments
 cask "electron-fiddle"
 # Web browser
 cask "firefox"
@@ -140,8 +166,6 @@ cask "firefox-developer-edition"
 cask "font-fira-code"
 # Tool to measure the computer system's performance
 cask "geekbench"
-# Web browser
-cask "google-chrome"
 # Light, Electron-based Wrapper around GraphiQL
 cask "graphiql"
 cask "graphql-playground"
@@ -159,6 +183,8 @@ cask "keka"
 cask "keycastr"
 # GPU-based terminal emulator
 cask "kitty"
+# Clipboard manager
+cask "maccy"
 # Controls and monitors all fans on Apple computers
 cask "macs-fan-control"
 # Full TeX Live distribution with GUI applications
@@ -210,7 +236,6 @@ mas "EuDic", id: 434350458
 mas "Gifski", id: 1351639930
 mas "iMovie", id: 408981434
 mas "iMuscle 2", id: 580090604
-mas "iZip Unarchiver", id: 717545828
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "LanScan", id: 472226235
