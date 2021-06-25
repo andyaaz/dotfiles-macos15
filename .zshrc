@@ -17,14 +17,16 @@ export PATH=$PATH:$HOME/Library/Python/2.7/bin
 # add pdflatex to $PATH
 export PATH=$PATH:/Library/TeX/texbin
 
+export ZSH_DISABLE_COMPFIX=true
+
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/Andy/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="wedisagree"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -88,7 +90,6 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     vi-mode
-    patch
     aws
 )
 
@@ -150,8 +151,6 @@ unsetopt PROMPT_SP
 # pyenv
 eval "$(pyenv init -)"
 
-export GOOGLE_APPLICATION_CREDENTIALS="/Users/Andy/metal-center-259308-98c9677d5e36.json"
-
 
 # Following are pasted from bash_profile
 # added by Anaconda3 2019.10 installer
@@ -176,17 +175,12 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # add sonar scanner to PATH
 export PATH="$HOME/sonar-scanner/bin:$PATH"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/Andy/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/Andy/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/Andy/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/Andy/google-cloud-sdk/completion.zsh.inc'; fi
-
 alias tf="terraform"
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  
 export PATH="/usr/local/sbin:$PATH"
 
 # docker
@@ -195,3 +189,4 @@ alias dk=docker
 # kubernetes
 alias k=kubectl
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+alias ecr-login="aws ecr get-login-password | docker login --username AWS --password-stdin 223490286239.dkr.ecr.ap-southeast-1.amazonaws.com"

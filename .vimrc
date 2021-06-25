@@ -111,15 +111,6 @@ inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Parenthesis/bracket
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" auto complete for brackets and quotes
-inoremap {     {}<Left>
-inoremap {<CR> {<CR>}<Esc>O
-inoremap {{    {
-inoremap {}    {}
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
@@ -139,6 +130,7 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'ap/vim-css-color'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'tpope/vim-fugitive'
 
 " List ends here. 
 " Plugins become visible to Vim after this call.
