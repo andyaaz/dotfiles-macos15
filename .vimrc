@@ -115,10 +115,10 @@ vnoremap ˚ :m '<-2<CR>gv=gv
 " => Parenthesis/bracket
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " auto complete for brackets and quotes
-inoremap {     {}<Left>
-inoremap {<CR> {<CR>}<Esc>O
-inoremap {{    {
-inoremap {}    {}
+" inoremap {     {}<Left>
+" inoremap {<CR> {<CR>}<Esc>O
+" inoremap {{    {
+" inoremap {}    {}
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

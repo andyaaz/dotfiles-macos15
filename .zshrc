@@ -148,7 +148,9 @@ alias manjaro="ssh -p 19020 andyan@manjaro.andyan.dev"
 unsetopt PROMPT_SP
 
 # pyenv
-eval "$(pyenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 export GOOGLE_APPLICATION_CREDENTIALS="/Users/Andy/metal-center-259308-98c9677d5e36.json"
 
