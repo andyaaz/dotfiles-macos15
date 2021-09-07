@@ -57,6 +57,8 @@ set numberwidth=1
 " turn on wildmenu
 set wildmenu
 
+" no line wrap
+set nowrap
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -130,7 +132,7 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'ap/vim-css-color'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 
 " List ends here. 
 " Plugins become visible to Vim after this call.

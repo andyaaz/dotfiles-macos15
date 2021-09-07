@@ -190,3 +190,9 @@ alias dk=docker
 alias k=kubectl
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 alias ecr-login="aws ecr get-login-password | docker login --username AWS --password-stdin 223490286239.dkr.ecr.ap-southeast-1.amazonaws.com"
+
+# use glob with mv
+shopt -s dotglob
+
+# k8s list pod resource limits and requests
+# kubectl get po -o custom-columns="Name:metadata.name,CPU-limit:spec.containers[*].resources.limits.cpu,CPU-requests:spec.containers[*].resources.requests.cpu,Memory-limit:spec.containers[*].resources.limits.memory,Memory-requests:spec.containers[*].resources.requests.memory"

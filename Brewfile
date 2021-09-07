@@ -4,6 +4,7 @@ tap "codekitchen/dinghy"
 tap "d12frosted/emacs-plus"
 tap "fluxcd/tap"
 tap "hashicorp/tap"
+tap "helm/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -12,6 +13,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
+tap "norwoodj/tap"
 tap "weaveworks/tap"
 # Run your GitHub Actions locally 🚀
 brew "act"
@@ -35,6 +37,10 @@ brew "cmake"
 brew "coreutils"
 # Reimplementation of ctags(1)
 brew "ctags"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
+# Visually compare two PDF files
+brew "diff-pdf"
 # Create Docker hosts locally and on cloud providers
 brew "docker-machine"
 # Command-line tool to interact with exercism.io
@@ -51,12 +57,18 @@ brew "libass"
 brew "ffmpeg"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
+# GitHub command-line tool
+brew "gh"
 # Highest-quality GIF encoder based on pngquant
 brew "gifski"
 # Distributed revision control system
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Image manipulation
+brew "netpbm"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
@@ -65,6 +77,10 @@ brew "graphviz"
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
+# Platform built on V8 to build network applications
+brew "node"
+# Simple zero-configuration command-line HTTP server
+brew "http-server"
 # Website copier/offline browser
 brew "httrack"
 # Add GitHub support to git on the command-line
@@ -73,8 +89,6 @@ brew "hub"
 brew "jmeter"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
 # GUI for vim, made for macOS
 brew "macvim", link: false
 # Mac App Store command-line interface
@@ -83,8 +97,6 @@ brew "mas"
 brew "minikube"
 # Intercept, modify, replay, save HTTP/S traffic
 brew "mitmproxy"
-# Platform built on V8 to build network applications
-brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
 # Swiss-army knife of markup format conversion
@@ -110,7 +122,7 @@ brew "tmuxinator"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Vi 'workalike' with many additional features
-brew "vim", link: false
+brew "vim"
 # General-purpose lossless data-compression library
 brew "zlib"
 # UNIX shell (command interpreter)
@@ -123,10 +135,14 @@ brew "codekitchen/dinghy/dinghy"
 brew "fluxcd/tap/flux"
 # Terraform
 brew "hashicorp/tap/terraform"
+# Hosting Helm Charts via GitHub Pages and Releases
+brew "helm/tap/chart-releaser"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # High-performance, schema-free, document-oriented database
 brew "mongodb/brew/mongodb-community"
+# Automatically generate markdown documentation for helm charts
+brew "norwoodj/tap/helm-docs"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
 # GPU-accelerated terminal emulator
@@ -168,6 +184,7 @@ cask "font-fira-code"
 cask "geekbench"
 # Light, Electron-based Wrapper around GraphiQL
 cask "graphiql"
+# GraphQL IDE for better development workflows
 cask "graphql-playground"
 # Open-source video transcoder
 cask "handbrake"
