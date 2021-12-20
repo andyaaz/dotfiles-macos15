@@ -196,3 +196,6 @@ shopt -s dotglob
 
 # k8s list pod resource limits and requests
 # kubectl get po -o custom-columns="Name:metadata.name,CPU-limit:spec.containers[*].resources.limits.cpu,CPU-requests:spec.containers[*].resources.requests.cpu,Memory-limit:spec.containers[*].resources.limits.memory,Memory-requests:spec.containers[*].resources.requests.memory"
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
