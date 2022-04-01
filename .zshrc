@@ -1,4 +1,3 @@
-
 # add EDITOR for tmuxinator
 export EDITOR="vim"
 
@@ -85,7 +84,7 @@ plugins=(
     tmuxinator
     docker 
     docker-compose
-    zsh_reload
+#    zsh_reload
     zsh-completions
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -191,11 +190,26 @@ alias k=kubectl
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 alias ecr-login="aws ecr get-login-password | docker login --username AWS --password-stdin 223490286239.dkr.ecr.ap-southeast-1.amazonaws.com"
 
-# use glob with mv
-shopt -s dotglob
+# use glob with mv. commented out because shopt is not built-in zsh
+# shopt -s dotglob
 
 # k8s list pod resource limits and requests
 # kubectl get po -o custom-columns="Name:metadata.name,CPU-limit:spec.containers[*].resources.limits.cpu,CPU-requests:spec.containers[*].resources.requests.cpu,Memory-limit:spec.containers[*].resources.limits.memory,Memory-requests:spec.containers[*].resources.requests.memory"
 
 # Added by serverless binary installer
 export PATH="$HOME/.serverless/bin:$PATH"
+
+# https://github.com/jonmosco/kube-ps1/
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS1
+# '\u200b' is a zero width char to work around new line issue
+KUBE_PS1_SUFFIX="]\n "
+KUBE_PS1_SYMBOL_PADDING=false
+KUBE_PS1_PREFIX="["
+KUBE_PS1_NS_ENABLE=false
+KUBE_PS1_SEPARATOR=""
+KUBE_PS1_CTX_COLOR=cyan
+KUBE_PS1_SYMBOL_COLOR=cyan
+
+# start ssh-agent on start up so my keys are working
+eval "$(ssh-agent -s)"

@@ -12,17 +12,18 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "instrumenta/instrumenta"
 tap "mongodb/brew"
 tap "norwoodj/tap"
 tap "weaveworks/tap"
 # Run your GitHub Actions locally 🚀
 brew "act"
-# Command-line interface for SQLite
-brew "sqlite"
-# Record and share terminal sessions
-brew "asciinema"
 # Library for manipulating PNG images
 brew "libpng"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Record and share terminal sessions
+brew "asciinema"
 # Core application library for C
 brew "glib"
 # Vector graphics library with cross-device output support
@@ -37,6 +38,8 @@ brew "cmake"
 brew "coreutils"
 # Reimplementation of ctags(1)
 brew "ctags"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Visually compare two PDF files
@@ -63,6 +66,8 @@ brew "gh"
 brew "gifski"
 # Distributed revision control system
 brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Image manipulation
@@ -89,6 +94,10 @@ brew "hub"
 brew "jmeter"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes prompt info for bash and zsh
+brew "kube-ps1"
+# Validate Kubernetes configuration files, supports multiple Kubernetes versions
+brew "kubeval"
 # GUI for vim, made for macOS
 brew "macvim", link: false
 # Mac App Store command-line interface
@@ -123,6 +132,10 @@ brew "tmuxinator"
 brew "tree"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
 # General-purpose lossless data-compression library
 brew "zlib"
 # UNIX shell (command interpreter)
@@ -145,14 +158,18 @@ brew "mongodb/brew/mongodb-community"
 brew "norwoodj/tap/helm-docs"
 # The official CLI for Amazon EKS
 brew "weaveworks/tap/eksctl"
+# Prebuilt OpenJDK binaries
+cask "adoptopenjdk8"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Application launcher and productivity software
 cask "alfred"
-# Utility to set up alt-tab to switch between windows
+# Enable Windows-like alt-tab
 cask "alt-tab"
 # Memory training application
 cask "anki"
+# Securely stores and accesses AWS credentials in a development environment
+cask "aws-vault"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Web browser focusing on privacy
@@ -222,6 +239,7 @@ cask "pomotroid"
 cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# SEO site audit tool
 cask "screaming-frog-seo-spider"
 # Tool to format memory cards complying with the SD File System spec
 cask "sdformatter"
