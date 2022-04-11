@@ -148,7 +148,7 @@ alias manjaro="ssh -p 19020 andyan@manjaro.andyan.dev"
 unsetopt PROMPT_SP
 
 # pyenv
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 
 # Following are pasted from bash_profile
@@ -188,7 +188,7 @@ alias dk=docker
 # kubernetes
 alias k=kubectl
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
-alias ecr-login="aws ecr get-login-password | docker login --username AWS --password-stdin 223490286239.dkr.ecr.ap-southeast-1.amazonaws.com"
+#alias ecr-login="aws ecr get-login-password | docker login --username AWS --password-stdin 223490286239.dkr.ecr.ap-southeast-1.amazonaws.com"
 
 # use glob with mv. commented out because shopt is not built-in zsh
 # shopt -s dotglob
@@ -200,16 +200,16 @@ alias ecr-login="aws ecr get-login-password | docker login --username AWS --pass
 export PATH="$HOME/.serverless/bin:$PATH"
 
 # https://github.com/jonmosco/kube-ps1/
-source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1)'$PS1
+# source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+# PS1='$(kube_ps1)'$PS1
 # '\u200b' is a zero width char to work around new line issue
-KUBE_PS1_SUFFIX="]\n "
-KUBE_PS1_SYMBOL_PADDING=false
-KUBE_PS1_PREFIX="["
-KUBE_PS1_NS_ENABLE=false
-KUBE_PS1_SEPARATOR=""
-KUBE_PS1_CTX_COLOR=cyan
-KUBE_PS1_SYMBOL_COLOR=cyan
+# KUBE_PS1_SUFFIX="]\n "
+# KUBE_PS1_SYMBOL_PADDING=false
+# KUBE_PS1_PREFIX="["
+# KUBE_PS1_NS_ENABLE=false
+# KUBE_PS1_SEPARATOR=""
+# KUBE_PS1_CTX_COLOR=cyan
+# KUBE_PS1_SYMBOL_COLOR=cyan
 
 # start ssh-agent on start up so my keys are working
 eval "$(ssh-agent -s)"
