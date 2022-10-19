@@ -80,6 +80,7 @@ ZSH_THEME="wedisagree"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    oc
     git
     tmuxinator
     docker 
@@ -213,3 +214,4 @@ export PATH="$HOME/.serverless/bin:$PATH"
 
 # start ssh-agent on start up so my keys are working
 eval "$(ssh-agent -s)"
+
